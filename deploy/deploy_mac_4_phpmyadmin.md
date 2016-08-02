@@ -3,7 +3,7 @@
 
 ####1、安装phpMyAdmin
 <p>
-到http://www.phpmyadmin.net/home_page/index.php下载最新的phpMyAdmin版本。
+到[http://www.phpmyadmin.net/home_page/index.php](http://www.phpmyadmin.net/home_page/index.php)下载最新的phpMyAdmin版本。
 
 解压后重命名为phpmyadmin，复制到：
 
