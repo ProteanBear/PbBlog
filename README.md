@@ -10,6 +10,9 @@ The ProteanBear's blog for  IT technology.
 
 #####Mac环境部署系列
 1. [Mac环境部署之Apache](deploy/deploy_mac_1_apache.md)
+2. [Mac环境部署之php](deploy/deploy_mac_2_php.md)
+3. [Mac环境部署之MySQL](deploy/deploy_mac_3_MySQL.md)
+4. [Mac环境部署之phpmyadmin](deploy/deploy_mac_4_phpmyadmin.md)
 
 #####小技巧系列：
 1. [小技巧：iOS，设置Grouped风格的UITableView的顶部位置](tips/tips_iOS_1_设置Grouped风格的UITableView的顶部位置.md)
