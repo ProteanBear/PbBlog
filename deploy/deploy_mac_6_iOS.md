@@ -33,14 +33,14 @@
 	*** CURRENT SOURCES ***	http://ruby.taobao.org/
 &#160; &#160; &#160; &#160;这时候，你再次在终端中运行：
 	sudo gem install cocoapods
-等上十几秒钟，CocoaPods就可以在你本地下载并且安装好了，使用如下命令安装环境：
+&#160; &#160; &#160; &#160;等上十几秒钟，CocoaPods就可以在你本地下载并且安装好了，使用如下命令安装环境：
 	pod setup
 	
 ####3、更新CocoaPods
 	sudo gem install -n /usr/local/bin cocoapods
 
 ####4、使用CocoaPods
-命令行进入项目主目录，创建Podfile文件，写入如下内容：
+&#160; &#160; &#160; &#160;命令行进入项目主目录，创建Podfile文件，写入如下内容：
 
 	//指定iOS系统的版本	platform:ios,"8.0"
 	//指定源地址（可以指定自己定制组件的地址）
@@ -52,8 +52,8 @@
     	pod 'AFNetworking','->2.0'
 	end
 	
-执行如下命令：
+&#160; &#160; &#160; &#160;执行如下命令：
 
 	pod install
 	
-创建好后就可使用xworkspace打开项目。
+&#160; &#160; &#160; &#160;创建好后就可使用xworkspace打开项目。
