@@ -15,6 +15,7 @@ The ProteanBear's blog for  IT technology.
 4. [Mac环境部署之phpMyAdmin](deploy/deploy_mac_4_phpmyadmin.md)
 5. [Mac环境部署之Java](deploy/deploy_mac_5_Java.md)
 6. [Mac环境部署之iOS](deploy/deploy_mac_6_iOS.md)
+7. [Mac环境部署之homebrew](deploy/deploy_mac_7_homebrew.md)
 
 #####小技巧系列：
 1. [小技巧：iOS，设置Grouped风格的UITableView的顶部位置](tips/tips_iOS_1_设置Grouped风格的UITableView的顶部位置.md)
