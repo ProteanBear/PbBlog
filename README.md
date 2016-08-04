@@ -19,6 +19,7 @@ The ProteanBear's blog for  IT technology.
 
 #####小技巧系列：
 1. [小技巧：iOS，设置Grouped风格的UITableView的顶部位置](tips/tips_iOS_1_设置Grouped风格的UITableView的顶部位置.md)
+2. [小技巧：iOS，如何控制App内屏幕常亮](tips/tips_iOS_2_如何控制App内屏幕常亮.md)
 
 <span id="resume" />
 #### 三、个人简历
