@@ -4,7 +4,7 @@ MongoDB是一个基于分布式文件存储的数据库。由C++语言编写。�
 
 ####安装
 
-访问http://www.mongodb.org/downloads下载MacOS下最新的MongoDB压缩包。
+访问[http://www.mongodb.org/downloads](http://www.mongodb.org/downloads)下载MacOS下最新的MongoDB压缩包。
 
 然后使用编译方式安装MongoDB，使用如下命令（以最新版本为mongodb-osx-x86_64-3.2.9.tgz为例）：
 
