@@ -16,6 +16,11 @@ The ProteanBear's blog for  IT technology.
 5. [Mac环境部署之Java](deploy/deploy_mac_5_Java.md)
 6. [Mac环境部署之iOS](deploy/deploy_mac_6_iOS.md)
 7. [Mac环境部署之homebrew](deploy/deploy_mac_7_homebrew.md)
+8. [Mac环境部署之Nginx](deploy/deploy_mac_8_Nginx.md)
+9. [Mac环境部署之MongoDB](deploy/deploy_mac_9_MongoDB.md)
+10. [Mac环境部署之Node.js](deploy/deploy_mac_10_Node.js.md)
+11. [Mac环境部署之Ruby on Rails](deploy/deploy_mac_11_Rails.md)
+12. [Mac环境部署之Redis](deploy/deploy_mac_12_Redis.md)
 
 #####小技巧系列：
 1. [小技巧：iOS，设置Grouped风格的UITableView的顶部位置](tips/tips_iOS_1_设置Grouped风格的UITableView的顶部位置.md)
