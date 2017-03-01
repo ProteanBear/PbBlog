@@ -180,7 +180,7 @@ vmlinuz initrd=initrd.img inst.stage2=hd:/dev/sdb4 quiet
 
 要做Win10引导，先需要CentOS能够识别NTFS格式的分区，所以要先安装ntfs-3g。
 
-（下面是段疯狂尝试的过程，不知是源失效还是公司网络原因，总是各种失败，想直接看后面的标准步骤直接点[这里](#ntfs3g)跳吧）
+（下面是段疯狂尝试的过程，不知是源失效还是公司网络原因，总是各种失败，想直接看后面的标准步骤直接点[这里](#下面就是标准步骤)跳吧）
 
 - yum安装ntfs-3g
 
@@ -245,7 +245,7 @@ vmlinuz initrd=initrd.img inst.stage2=hd:/dev/sdb4 quiet
 还是404！再尝试用rpm命令，依然无果……
 
 最后我想，为啥必须yum安装呢……直接晚上找找直接wget了安装得了！
-<span id="ntfs3g" />
+
 ###### **下面就是标准步骤：**
 
 1. 安装wget
