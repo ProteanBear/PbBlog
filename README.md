@@ -24,7 +24,7 @@ The ProteanBear's blog for  IT technology.
 
 ##### 大数据环境部署系列
 
-1. CentOS环境部署之系统安装
+1. [CentOS环境部署之系统安装](deploy/deploy_centos_0_install.md)
 
 #####小技巧系列：
 1. [小技巧：iOS，设置Grouped风格的UITableView的顶部位置](tips/tips_iOS_1_设置Grouped风格的UITableView的顶部位置.md)
