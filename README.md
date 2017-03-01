@@ -22,6 +22,10 @@ The ProteanBear's blog for  IT technology.
 11. [Mac环境部署之Ruby on Rails](deploy/deploy_mac_11_Rails.md)
 12. [Mac环境部署之Redis](deploy/deploy_mac_12_Redis.md)
 
+##### 大数据环境部署系列
+
+1. CentOS环境部署之系统安装
+
 #####小技巧系列：
 1. [小技巧：iOS，设置Grouped风格的UITableView的顶部位置](tips/tips_iOS_1_设置Grouped风格的UITableView的顶部位置.md)
 2. [小技巧：iOS，如何控制App内屏幕常亮](tips/tips_iOS_2_如何控制App内屏幕常亮.md)
@@ -86,23 +90,23 @@ The ProteanBear's blog for  IT technology.
 	</tr>
 	<tr>
 		<td colspan=3>1、丰富的Java开发经验，侧重于Web系统后台、网络通讯等方向。</td>
-		<td colspan=2>1、多项目、多团队以及大型项目管理经验，并有过1年部门管理的经验。</td>
+		<td colspan=2>1、多项目、多团队以及大型项目管理经验，并有过1年部门管理的经验。</td>
 	</tr>
 	<tr>
 		<td colspan=3>2、丰富的前端开发经验，精通Javascript、熟悉HTML和CSS。</td>
-		<td colspan=2>2、注重产品整体性和延续性，习惯先整体后局部的思维方式。</td>
+		<td colspan=2>2、注重产品整体性和延续性，习惯先整体后局部的思维方式。</td>
 	</tr>
 	<tr>
 		<td colspan=3>3、4年以上iOS原生应用开发经验，擅长各种视图布局和业务处理。</td>
-		<td colspan=2>3、多项目、多团队以及大型项目管理经验，并有过1年部门管理的经验。</td>
+		<td colspan=2>3、多项目、多团队以及大型项目管理经验，并有过1年部门管理的经验。</td>
 	</tr>
 	<tr>
 		<td colspan=3>4、熟练使用Oracle、Mysql等数据库，有Oracle处理海量数据的经验。</td>
-		<td colspan=2>4、为人细心，注重产品细节刻画；做事沉稳，不盲目求快，注重产品质量和用户体验。</td>
+		<td colspan=2>4、为人细心，注重产品细节刻画；做事沉稳，不盲目求快，注重产品质量和用户体验。</td>
 	</tr>
 	<tr>
 		<td colspan=3>5、热衷新技术研究，对大数据、微服务架构，以及多种开发语言风格皆有研究了解。</td>
-		<td colspan=2>5、擅长挖掘团队成员的个人优势，主张协作、主动和空间化的管理方式。</td>
+		<td colspan=2>5、擅长挖掘团队成员的个人优势，主张协作、主动和空间化的管理方式。</td>
 	</tr>
 	<tr>
 		<th style="background-color:#EEE;min-width:150px" colspan=2>主要项目</th>
@@ -112,7 +116,7 @@ The ProteanBear's blog for  IT technology.
 	<tr>
 		<td colspan=2>《伟狗》企业圈层协作平台</td>
 		<td colspan=1>项目经理<br>架构师<br>后台开发</td>
-		<td colspan=4>相关技术：SpringMVC+iBatis、Node.js<br>工作内容：项目管理、架构重建、系统设计；后台业务服务开发；消息推送服务开发链接：<a href="http://www.viogoal.com/">http://www.viogoal.com/</a></td>
+		<td colspan=4>相关技术：SpringMVC+iBatis、Node.js<br>工作内容：项目管理、架构重建、系统设计；后台业务服务开发；消息推送服务开发链接：<a href="http://www.viogoal.com/">http://www.viogoal.com/</a></td>
 	</tr>
 	<tr>
 		<td colspan=2>《中华墨迹》及画家应用</td>
