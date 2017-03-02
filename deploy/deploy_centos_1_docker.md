@@ -12,25 +12,25 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
 
 ​	— [删除方法](#删除方法)
 
-[安装Docker](#安装Docker)
+[安装Docker](#安装docker)
 
-​	— [方法一：使用存储库安装](#方法一：使用存储库安装)
+​	— [方法一：使用存储库安装](#方法一使用存储库安装)
 
 ​	—— [设置存储库](#设置存储库)
 
-​	—— [安装Docker](#安装Docker-1)
+​	—— [安装Docker](#安装docker-1)
 
-​	—— [升级Docker的方法](#升级Docker的方法)
+​	—— [升级Docker的方法](#升级docker的方法)
 
-​	— [方法二：下载包安装](#方法二：下载包安装)
+​	— [方法二：下载包安装](#方法二下载包安装)
 
 [Docker配置](#Docker配置)
 
-​	— [让非Root用户管理Docker](#让非Root用户管理Docker)
+​	— [让非Root用户管理Docker](#让非root用户管理docker)
 
-​	— [开机自动启动Docker](#开机自动启动Docker)
+​	— [开机自动启动Docker](#开机自动启动docker)
 
-[附：安装命令纯净版](#附Docker安装命令纯净版)
+[附：安装命令纯净版](#附docker安装命令纯净版)
 
 
 
@@ -106,6 +106,7 @@ $ sudo yum -y remove docker-selinux
    ```
    $ sudo yum-config-manager --disable docker-testing
    ```
+
 ###### 安装Docker
 
 1. 更新`yum`包索引。
