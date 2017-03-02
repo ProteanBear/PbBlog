@@ -25,6 +25,7 @@ The ProteanBear's blog for  IT technology.
 ##### CentOS环境部署系列
 
 1. [CentOS环境部署之系统安装](deploy/deploy_centos_0_install.md)
+2. [CentOS环境部署之Docker安装和配置](deploy/deploy_centos_1_docker.md)
 
 #####小技巧系列：
 1. [小技巧：iOS，设置Grouped风格的UITableView的顶部位置](tips/tips_iOS_1_设置Grouped风格的UITableView的顶部位置.md)
