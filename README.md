@@ -22,7 +22,7 @@ The ProteanBear's blog for  IT technology.
 11. [Mac环境部署之Ruby on Rails](deploy/deploy_mac_11_Rails.md)
 12. [Mac环境部署之Redis](deploy/deploy_mac_12_Redis.md)
 
-##### 大数据环境部署系列
+##### CentOS环境部署系列
 
 1. [CentOS环境部署之系统安装](deploy/deploy_centos_0_install.md)
 

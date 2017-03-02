@@ -187,7 +187,7 @@ vmlinuz initrd=initrd.img inst.stage2=hd:/dev/sdb4 quiet
   应该很简单啊，命令行输入：
 
   ```
-  [root@localhost ~]# yum install ntfs-3g
+  [root@localhost ~]$ yum install ntfs-3g
   ```
 
 结果提示找不到！查了一下说CentOS默认库里是没有ntfs-3g，需要增加源。
@@ -197,7 +197,7 @@ vmlinuz initrd=initrd.img inst.stage2=hd:/dev/sdb4 quiet
   找不到在哪里看的了，完全没搞懂，用了这个命令：
 
   ```
-  [root@localhost ~]# yum localinstall --nogpgcheck http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el7.rf.x86_64.rpm
+  [root@localhost ~]$ yum localinstall --nogpgcheck http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el7.rf.x86_64.rpm
   ```
 
 没搞懂效果如何，然后试了下yum安装ntfs-3g还是找不到。
@@ -205,13 +205,13 @@ vmlinuz initrd=initrd.img inst.stage2=hd:/dev/sdb4 quiet
 - 尝试二：yum增加阿里云的源
 
   ```
-  [root@localhost ~]# wget -O /etc/yum.repos.d/epel.repo http://mirrors.aliyun.com/repo/epel-7.repo
+  [root@localhost ~]$ wget -O /etc/yum.repos.d/epel.repo http://mirrors.aliyun.com/repo/epel-7.repo
   ```
 
 发现没有wget，先安装个wget：
 
 ```
-[root@localhost ~]# yum install wget
+[root@localhost ~]$ yum install wget
 ```
 
 再次运行，提示404，找不到！
@@ -219,13 +219,13 @@ vmlinuz initrd=initrd.img inst.stage2=hd:/dev/sdb4 quiet
 期间还运行了update更新了下yum：
 
 ```
-[root@localhost ~]# yum update
+[root@localhost ~]$ yum update
 ```
 
 然后想用ntfs-3g找不到，尝试用ntfs*：
 
 ```
-[root@localhost ~]# yum install ntfs*
+[root@localhost ~]$ yum install ntfs*
 ```
 
 还是找不到……
@@ -233,13 +233,13 @@ vmlinuz initrd=initrd.img inst.stage2=hd:/dev/sdb4 quiet
 - 尝试三：yum增加rpmforge的源
 
   ```
-  [root@localhost ~]# wget http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-2.el7.rf.x86_64.rpm
+  [root@localhost ~]$ wget http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-2.el7.rf.x86_64.rpm
   ```
 
 提示404，找不到！再尝试：
 
 ```
-[root@localhost ~]# wget http://apt.sw.be/redhat/el7/en/x86_64/rpmforge/RPMS/rpmforge-release-0.5.3-1.el7.rf.x86_64.rpm
+[root@localhost ~]$ wget http://apt.sw.be/redhat/el7/en/x86_64/rpmforge/RPMS/rpmforge-release-0.5.3-1.el7.rf.x86_64.rpm
 ```
 
 还是404！再尝试用rpm命令，依然无果……
@@ -251,7 +251,7 @@ vmlinuz initrd=initrd.img inst.stage2=hd:/dev/sdb4 quiet
 1. 安装wget
 
    ```
-   [root@localhost ~]# yum install wget
+   [root@localhost ~]$ yum install wget
    ```
 
 2. 下载ntfs-3g压缩包
@@ -259,13 +259,13 @@ vmlinuz initrd=initrd.img inst.stage2=hd:/dev/sdb4 quiet
    地址可以从[官方网址](http://www.tuxera.com/community/open-source-ntfs-3g/)找到。
 
    ```
-   [root@localhost ~]# wget https://tuxera.com/opensource/ntfs-3g_ntfsprogs-2016.2.22.tgz
+   [root@localhost ~]$ wget https://tuxera.com/opensource/ntfs-3g_ntfsprogs-2016.2.22.tgz
    ```
 
 3. 解压ntfs-3g压缩包
 
    ```
-   [root@localhost ~]# tar -zxvf ntfs-3g_ntfsgrogs-2016.2.22.tgz
+   [root@localhost ~]$ tar -zxvf ntfs-3g_ntfsgrogs-2016.2.22.tgz
    ```
 
 4. 安装gcc
@@ -273,16 +273,16 @@ vmlinuz initrd=initrd.img inst.stage2=hd:/dev/sdb4 quiet
    最小安装没有安装make安装的编译环境，所以先安装上gcc。
 
    ```
-   [root@localhost ~]# yum -y install gcc
+   [root@localhost ~]$ yum -y install gcc
    ```
 
 5. 配置、编译和安装ntfs-3g
 
    ```
-   [root@localhost ~]# cd ntfs-3g_ntfsgrogs-2016.2.22
-   [root@localhost ~]# ./configure
-   [root@localhost ~]# make
-   [root@localhost ~]# make install
+   [root@localhost ~]$ cd ntfs-3g_ntfsgrogs-2016.2.22
+   [root@localhost ~]$ ./configure
+   [root@localhost ~]$ make
+   [root@localhost ~]$ make install
    ```
 
 终于搞定了ntfs-3g的安装了。
@@ -290,8 +290,8 @@ vmlinuz initrd=initrd.img inst.stage2=hd:/dev/sdb4 quiet
 #### 3、自动检测引导
 
 ```
-[root@localhost ~]# grub2-mkconfig -o /boot/grub2/grub.cfg
-[root@localhost ~]# reboot
+[root@localhost ~]$ grub2-mkconfig -o /boot/grub2/grub.cfg
+[root@localhost ~]$ reboot
 ```
 
 重启后Windows10就出现了。
@@ -303,13 +303,13 @@ vmlinuz initrd=initrd.img inst.stage2=hd:/dev/sdb4 quiet
 1. 查看默认启动的内核
 
    ```
-   [root@localhost ~]# grub2-editenv list
+   [root@localhost ~]$ grub2-editenv list
    ```
 
 2. 查看所有内核
 
    ```
-   [root@localhost ~]# cat /boot/grub2/grub.cfg | grep menuentry
+   [root@localhost ~]$ cat /boot/grub2/grub.cfg | grep menuentry
    ```
 
    记住列出的Win10内核的名称，引号里的全部内容。
@@ -317,13 +317,13 @@ vmlinuz initrd=initrd.img inst.stage2=hd:/dev/sdb4 quiet
 3. 修改Windows10为默认启动内核
 
    ```
-   [root@localhost ~]# grub2-set-default '记住的名称'
+   [root@localhost ~]$ grub2-set-default '记住的名称'
    ```
 
 4. 验证默认启动内核
 
    ```
-   [root@localhost ~]# grub2-editenv list
+   [root@localhost ~]$ grub2-editenv list
    ```
 
 再次重启看一下引导也弄好了。
