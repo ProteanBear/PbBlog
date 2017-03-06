@@ -1,4 +1,4 @@
-#部署：CentOS环境部署之Docker安装和配置
+#杂学札记之大数据系列：CentOS7下Docker安装和配置
 
 Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。
 
@@ -29,6 +29,8 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
 ​	— [让非Root用户管理Docker](#让非root用户管理docker)
 
 ​	— [开机自动启动Docker](#开机自动启动docker)
+
+​	— [Docker加速器](#docker加速器)
 
 [附：安装命令纯净版](#附docker安装命令纯净版)
 
@@ -238,6 +240,10 @@ $ sudo systemctl enable docker
 ```
 $ sudo systemctl disable docker
 ```
+
+#### Docker加速器
+
+万恶的那啥，在国内连接Docker Hub非常的不稳定，还好有[DaoCloud](https://www.daocloud.io/)的加速器。注册用户登录后，选择[加速器](https://www.daocloud.io/mirror#accelerator-doc)。根据提示就可以将 --registry-mirror 加入到你的 Docker 配置文件 /etc/default/docker 中，方便国内用户使用。
 
 
 

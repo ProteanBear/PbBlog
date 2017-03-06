@@ -22,10 +22,11 @@ The ProteanBear's blog for  IT technology.
 11. [Mac环境部署之Ruby on Rails](deploy/deploy_mac_11_Rails.md)
 12. [Mac环境部署之Redis](deploy/deploy_mac_12_Redis.md)
 
-##### CentOS环境部署系列
+##### 杂学札记之大数据系列
 
-1. [CentOS环境部署之系统安装](deploy/deploy_centos_0_install.md)
-2. [CentOS环境部署之Docker安装和配置](deploy/deploy_centos_1_docker.md)
+1. [CentOS7和Windows10双系统安装](trails/bigdata/1_centos_install.md)
+2. [CentOS下Docker的安装和配置](trails/bigdata/2_docker_install.md)
+3. [使用Docker编译64位的Hadoop](trails/bigdata/3_hadoop_compile.md)
 
 #####小技巧系列：
 1. [小技巧：iOS，设置Grouped风格的UITableView的顶部位置](tips/tips_iOS_1_设置Grouped风格的UITableView的顶部位置.md)
