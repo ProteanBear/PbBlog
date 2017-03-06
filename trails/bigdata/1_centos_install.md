@@ -4,6 +4,8 @@
 
 
 
+
+
 ### 安装说明
 
 **系统安装：**Windows10+CentOS7双系统
@@ -18,12 +20,16 @@
 
 
 
+
+
 ### 准备工作
 
 1. 一台安装了Windows10的PC，并通过网线连接到了网络（这里略过了Windows10的安装啦！）
 2. 一个U盘，容量最好8G以上
 3. 安装文件：CentOS-7-x86_64-DVD-1611.iso（这个是我安装时的版本，[官方下载地址](https://www.centos.org/download/)）
 4. 需要的软件：UltraISO（试用版也OK，[官方下载地址](https://cn.ultraiso.net/xiazai.html)）
+
+
 
 
 
@@ -36,23 +42,23 @@
 
 在“**文件资源管理器**”中右键单击“**此电脑**”，选择“**管理**”；进入计算机管理后，选择“**磁盘管理**”
 
-![磁盘管理](../images/deploy_centos_0_0.jpg)
+![磁盘管理](../../images/deploy_centos_0_0.jpg)
 
 ###### 方法一：直接删除卷获得空闲空间
 
 可以删除不需要的磁盘分区，获得磁盘空闲空间。（本人公司电脑，最后个盘符没啥东西，所以用的这种方法）
 
-![磁盘管理-删除卷](../images/deploy_centos_0_1.jpg)
+![磁盘管理-删除卷](../../images/deploy_centos_0_1.jpg)
 
 ###### 方法二：压缩卷获得多余的空闲空间
 
 如果没有不需要的分区也没关系，可以使用磁盘管理的压缩卷功能移动出多余的空闲空间。
 
-![磁盘管理-压缩卷-1](../images/deploy_centos_0_2.png)
+![磁盘管理-压缩卷-1](../../images/deploy_centos_0_2.png)
 
-![磁盘管理-压缩卷-2](../images/deploy_centos_0_3.png)
+![磁盘管理-压缩卷-2](../../images/deploy_centos_0_3.png)
 
-![磁盘管理-压缩卷-3](../images/deploy_centos_0_4.png)
+![磁盘管理-压缩卷-3](../../images/deploy_centos_0_4.png)
 
 
 #### 2、记录下系统的网络设置
@@ -61,21 +67,25 @@
 
 
 
+
+
 ### 第二步：CentOS安装U盘制作
 
 #### 1、启动UltralSO，打开CentOS-7-x86_64-DVD-1611.iso文件
 
-![UltraISO-打开文件](../images/deploy_centos_0_5.png)
+![UltraISO-打开文件](../../images/deploy_centos_0_5.png)
 
 #### 2、写入U盘
 
-![UltraISO-写入硬盘映像](../images/deploy_centos_0_6.png)
+![UltraISO-写入硬盘映像](../../images/deploy_centos_0_6.png)
 
-![UltraISO-选择参数后写入](../images/deploy_centos_0_7.png)
+![UltraISO-选择参数后写入](../../images/deploy_centos_0_7.png)
 
-![UltraISO-确认](../images/deploy_centos_0_8.png)
+![UltraISO-确认](../../images/deploy_centos_0_8.png)
 
-![UltraISO-刻录完成](../images/deploy_centos_0_9.png)
+![UltraISO-刻录完成](../../images/deploy_centos_0_9.png)
+
+
 
 
 
@@ -85,7 +95,7 @@
 
 重启电脑，连点F12（个别电脑可能有不同，本人PC是联想）；选择USB HDD的那项进入画面。
 
-![安装-进入画面](../images/deploy_centos_0_10.png)
+![安装-进入画面](../../images/deploy_centos_0_10.png)
 
 很多教程说这里要修改U盘引导的位置才行，其实我第一次直接选择了“**Install CentOS 7**”就进入安装界面了，不知道是不是此版本修复了原来的问题，还是问题出现在开始安装的时候；不过大家都说需要改，安全起见下面还是修改一下吧。
 
@@ -105,7 +115,7 @@
 
 回车，进入下面的界面，就可以看到U盘的位置描述了
 
-![安装-U盘位置](../images/deploy_centos_0_11.png)
+![安装-U盘位置](../../images/deploy_centos_0_11.png)
 
 #### 3、修改U盘位置
 
@@ -117,33 +127,35 @@ vmlinuz initrd=initrd.img inst.stage2=hd:/dev/sdb4 quiet
 
 
 
+
+
 ### 第四步：安装CentOS7
 
 这样就进入的图形安装界面了。
 
 #### 1、选择语言
 
-![安装-选择语言](../images/deploy_centos_0_12.png)
+![安装-选择语言](../../images/deploy_centos_0_12.png)
 
 #### 2、设置安装位置
 
 选择语言后，进入如下画面
 
-![安装-设置安装位置](../images/deploy_centos_0_13.png)
+![安装-设置安装位置](../../images/deploy_centos_0_13.png)
 
 本地化里的内容不必修改；软件中的安装源是自动检测的，软件选择中可以选择系统安装的基本环境，上面说了就是要最小安装，所以这里也不用修改（想要桌面的在这里选择GNOME或者KDE都行）。
 
 直接点击安装位置，来设置安装的磁盘。
 
-![安装-选择安装位置](../images/deploy_centos_0_14.png)
+![安装-选择安装位置](../../images/deploy_centos_0_14.png)
 
 选择手动分区后，点击完成进入手动分区；直接点击“**点这里自动创建分区**”就好了，分区方案也为默认的LVM。
 
-![安装-配置分区](../images/deploy_centos_0_15.png)
+![安装-配置分区](../../images/deploy_centos_0_15.png)
 
 分区分好了，可以手动修改分区的大小，直接默认的就好了，然后点击完成（这里需要注意的是swap的大小，一般来说，应该是实际内存的两倍，但是实际内存很大的话，设置8G也够了）。
 
-![安装-分区处理](../images/deploy_centos_0_16.png)
+![安装-分区处理](../../images/deploy_centos_0_16.png)
 
 点击“**接收更改**”，安装位置就设置完成了。
 
@@ -155,13 +167,15 @@ vmlinuz initrd=initrd.img inst.stage2=hd:/dev/sdb4 quiet
 
 #### 4、设置密码和用户
 
-![安装-开始安装](../images/deploy_centos_0_17.png)
+![安装-开始安装](../../images/deploy_centos_0_17.png)
 
 点击“**开始安装**”，安装过程中还要设置root的密码和创建用户（如果你的密码设置太简单的话，要点两次完成才能退出）。
 
-![安装-设置密码和用户](../images/deploy_centos_0_18.png)
+![安装-设置密码和用户](../../images/deploy_centos_0_18.png)
 
-![安装-安装完成](../images/deploy_centos_0_19.png)
+![安装-安装完成](../../images/deploy_centos_0_19.png)
+
+
 
 
 
@@ -175,7 +189,7 @@ vmlinuz initrd=initrd.img inst.stage2=hd:/dev/sdb4 quiet
 
 最小安装后进入的是命令行界面，因为要配置引导，所以使用root登录。
 
-![grub-登录](../images/deploy_centos_0_20.png)
+![grub-登录](../../images/deploy_centos_0_20.png)
 
 #### 2、安装ntfs-3g
 
