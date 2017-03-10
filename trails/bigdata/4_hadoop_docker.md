@@ -12,33 +12,33 @@
 
 [四、最终的文件内容](四最终的文件内容)
 
-​	— [config/core-site.xml]()
+​	— [config/core-site.xml](#configcore-sitexml)
 
-​	— [config/hadoop-env.sh]()
+​	— [config/hadoop-env.sh](#confighadoop-envsh)
 
-​	— [config/hdfs-site.xml]()
+​	— [config/hdfs-site.xml](#confighdfs-sitexml)
 
-​	— [config/mapred-site.xml]()
+​	— [config/mapred-site.xml](#configmapred-sitexml)
 
-​	— [config/run-wordcount.sh]()
+​	— [config/run-wordcount.sh](#configrun-wordcountsh)
 
-​	— [config/slaves]()
+​	— [config/slaves](#configslaves)
 
-​	— [config/ssh_config]()
+​	— [config/ssh_config](#configssh_config)
 
-​	— [config/start-hadoop.sh]()
+​	— [config/start-hadoop.sh](#configstart-hadoopsh)
 
-​	— [config/yarn-site.xml]()
+​	— [config/yarn-site.xml](#configyarn-sitexml)
 
 ​	— [Dockerfile](#dockerfile)
 
-​	— [start-container.sh]()
+​	— [start-container.sh](#start-containersh)
 
-​	— [stop-container.sh]()
+​	— [stop-container.sh](#stopcontainersh)
 
-​	— [remoe-container.sh]()
+​	— [remove-container.sh](#remove-containersh)
 
-​	— [resize-cluster.sh]()
+​	— [resize-cluster.sh](#resize-clustersh)
 
 [附：命令行纯净版](#附命令行纯净版)
 
