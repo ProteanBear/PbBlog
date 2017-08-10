@@ -8,7 +8,7 @@ The ProteanBear's blog for  IT technology.
 &#160; &#160; &#160; &#160;详情请见&#160;[《个人简历》](#resume)
 #### 二、文章目录：
 
-#####Mac环境部署系列
+##### Mac环境部署系列
 1. [Mac环境部署之Apache](deploy/deploy_mac_1_apache.md)
 2. [Mac环境部署之php](deploy/deploy_mac_2_php.md)
 3. [Mac环境部署之MySQL](deploy/deploy_mac_3_MySQL.md)
@@ -29,7 +29,7 @@ The ProteanBear's blog for  IT technology.
 3. [使用Docker编译64位的Hadoop](trails/bigdata/3_hadoop_compile.md)
 4. [使用Docker搭建Hadoop集群](trails/bigdata/4_hadoop_docker.md)
 
-#####小技巧系列：
+##### 小技巧系列：
 1. [小技巧：iOS，设置Grouped风格的UITableView的顶部位置](tips/tips_iOS_1_设置Grouped风格的UITableView的顶部位置.md)
 2. [小技巧：iOS，如何控制App内屏幕常亮](tips/tips_iOS_2_如何控制App内屏幕常亮.md)
 
