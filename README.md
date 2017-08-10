@@ -5,7 +5,7 @@ The ProteanBear's blog for  IT technology.
 #### 一、个人简介：
 &#160; &#160; &#160; &#160;2006年毕业于四川大学计算机科学与技术专业，担任过项目经理、架构师、高级Java软件工程师、iOS软件工程师、Web软件工程师等职务，有丰富的互联网软件开发和项目管理经验。现就认成都金融控股集团有限公司高级软件工程师，曾经在西藏电信天地通（移动定位管理系统）、智能交通诱导系统、企业移动互联网营销平台、伟狗企业圈层协作平台等互联网大型项目负责主要开发和项目管理工作。
 
-&#160; &#160; &#160; &#160;详情请见&#160;[《个人简历》](#resume)
+       详情请见 [《个人简历》](#三个人简历)
 #### 二、文章目录：
 
 ##### Mac环境部署系列
@@ -57,7 +57,7 @@ The ProteanBear's blog for  IT technology.
 	</tr>
 	<tr>
 		<th rowspan=6 style="background-color:#EEE;">工作经历</th>
-		<td colspan=2>成都金融控股集团有限公司</td>
+		<td colspan=2>成都金控数据服务有限公司</td>
 		<td colspan=2>2016~至今</td>
 		<td >高级Java软件工程师</td>
 	</tr>
@@ -101,7 +101,7 @@ The ProteanBear's blog for  IT technology.
 		<td colspan=2>2、注重产品整体性和延续性，习惯先整体后局部的思维方式。</td>
 	</tr>
 	<tr>
-		<td colspan=3>3、4年以上iOS原生应用开发经验，擅长各种视图布局和业务处理。</td>
+		<td colspan=3>3、5年以上iOS原生应用开发经验，擅长各种视图布局和业务处理。</td>
 		<td colspan=2>3、多项目、多团队以及大型项目管理经验，并有过1年部门管理的经验。</td>
 	</tr>
 	<tr>
@@ -116,6 +116,11 @@ The ProteanBear's blog for  IT technology.
 		<th style="background-color:#EEE;min-width:150px" colspan=2>主要项目</th>
 		<th style="background-color:#EEE;width:60px" colspan=1>职务</th>
 		<th style="background-color:#EEE;" colspan=4>关键描述</th>
+	</tr>
+	<tr>
+		<td colspan=2>医政卫监系统平台</td>
+		<td colspan=1>架构师<br>后台开发</td>
+		<td colspan=4>相关技术：SpringMVC+MyBatis、SpringBoot<br>工作内容：系统平台框架设计；后台业务服务开发；告警分析算法设计与实现</a></td>
 	</tr>
 	<tr>
 		<td colspan=2>《伟狗》企业圈层协作平台</td>
