@@ -34,6 +34,7 @@ The ProteanBear's blog for  IT technology.
 2. [小技巧：iOS，如何控制App内屏幕常亮](tips/tips_iOS_2_如何控制App内屏幕常亮.md)
 
 <span id="resume" />
+
 #### 三、个人简历
 
 <table style="max-width:660px">
