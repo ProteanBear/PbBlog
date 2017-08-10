@@ -1,4 +1,4 @@
-#部署：Mac环境部署之MySQL
+# 部署：Mac环境部署之MySQL
 
 
 #### 1、安装MySQL
