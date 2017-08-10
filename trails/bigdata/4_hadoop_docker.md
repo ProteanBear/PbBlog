@@ -1,4 +1,4 @@
-#杂学札记之大数据系列：使用Docker搭建Hadoop集群
+# 杂学札记之大数据系列：使用Docker搭建Hadoop集群
 
 （搭建集群部分借鉴了[kiwenlau](https://github.com/kiwenlau)/[**hadoop-cluster-docker**](https://github.com/kiwenlau/hadoop-cluster-docker)中的内容，不过那里的基础环境是Ubuntu，本人这里是用的CentOS7，因此也糟了不少坑！）
 
@@ -170,12 +170,12 @@
 
 10. 编辑从节点记录：slaves
 
-  ```
-  hadoop-slave1
-  hadoop-slave2
-  ```
+ ```
+ hadoop-slave1
+ hadoop-slave2
+ ```
 
-  这个后面有个脚本可以根据从节点数量自动生成。
+ 这个后面有个脚本可以根据从节点数量自动生成。
 
 11. 编辑启动Hadoop的脚本：start-hadoop.sh
 

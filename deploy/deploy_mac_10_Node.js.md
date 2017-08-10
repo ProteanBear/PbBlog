@@ -1,4 +1,4 @@
-#部署：Mac环境部署之Node.js
+# 部署：Mac环境部署之Node.js
 
 访问[http://nodejs.cn/](http://nodejs.cn/)下载最新的Mac安装包，安装即可。
 
