@@ -8,6 +8,10 @@ The ProteanBear's blog for  IT technology.
        详情请见 [《个人简历》](#三个人简历)
 #### 二、文章目录：
 
+##### 杂学札记之Java框架和组件
+
+
+
 ##### 杂学札记之大数据系列
 
 1. [CentOS7和Windows10双系统安装](trails/bigdata/1_centos_install.md)
@@ -18,8 +22,9 @@ The ProteanBear's blog for  IT technology.
 ##### 小技巧系列：
 1. [小技巧：iOS，设置Grouped风格的UITableView的顶部位置](tips/tips_iOS_1_设置Grouped风格的UITableView的顶部位置.md)
 2. [小技巧：iOS，如何控制App内屏幕常亮](tips/tips_iOS_2_如何控制App内屏幕常亮.md)
+3. [小技巧：Hibernate中Oracle数据库中Date类型的注解](tips/tips_iOS_3_Hibernate中Oracle数据库中Date类型的注解.md)
 
-##### Mac环境部署系列
+#####  Mac环境部署系列
 1. [Mac环境部署之Apache](deploy/deploy_mac_1_apache.md)
 2. [Mac环境部署之php](deploy/deploy_mac_2_php.md)
 3. [Mac环境部署之MySQL](deploy/deploy_mac_3_MySQL.md)
