@@ -8,9 +8,9 @@ The ProteanBear's blog for  IT technology.
        详情请见 [《个人简历》](#三个人简历)
 #### 二、文章目录：
 
-##### 杂学札记之Java框架和组件
+##### 杂学札记之那些工具们
 
-
+1. [Apache POI 之一：Excel文档的读取](trails/tools/Apache_POI_1_Excel_Read.md)
 
 ##### 杂学札记之大数据系列
 

@@ -1,0 +1,210 @@
+# Apache POI 之一：Excel文档的读取
+**Apache POI** 是创建和维护操作各种符合Office Open XML（OOXML）标准和微软的OLE 2复合文档格式（OLE2）的Java API。用它可以使用Java读取和创建,修改MS Excel文件.而且,还可以使用Java读取和创建MS Word和MSPowerPoint文件。Apache POI 提供Java操作Excel解决方案（适用于Excel97-2008）。
+
+**本篇文章主要是演示Excel文档的读取处理**。
+
+　　
+
+使用POI解析Excel有两个需要注意的关键点：
+
+- 遍历方式的区别（PhysicalNumber和Number）
+- 单元格不同格式的读取
+
+下面单独说明一下。
+
+　　
+
+#### POI遍历方式的区别（PhysicalNumber和Number）
+
+　　Excel文档结构分为整个文档（Workbook）、分页（Sheet）、行（Row）、单元格（Cell）四个类来描述，而遍历整个Excel也是通过层层遍历到单元格的方式，但是方式略有不同。如POI提供了获取行数的方法为getPhysicalNumberOfRows，而这里physical的含义就是去除了空行的数量，因此只有保证没有空行的情况下才能使用这个数量来遍历全部行。去除空行的遍历：
+
+```java
+//行数
+int rowNum=sheet.getPhysicalNumberOfRows();
+if(rowNum<1) continue;
+
+// 从第2(r=1)行取出，第一行默认为标题行
+rowNum+=1;
+
+//遍历
+for(int r=1;r<rowNum;r++)
+{
+    Row row=sheet.getRow(r);
+  
+    //其他处理
+}
+```
+
+　　但是，在下一层即遍历Cell单元格的时候如果还使用类似的getPhysicalNumberOfCells来获取数量遍历则可能出现错误，因为获取到的数量是去除了空格的单元格数量，而单元格的内容很可能是空的，所以这里就要使用一种可以遍历全部单元格的遍历方式：
+
+```java
+// 循环取出每行的列数，其实是最后一列的列数
+int cellNum=row.getLastCellNum();
+// 遍历
+for(int c=0;c<cellNum;c++)
+{
+    // 取出每列值
+    Cell cell=row.getCell(c);
+    
+    //其他处理
+}
+```
+
+　　
+
+#### 单元格不同格式的读取
+
+POI解析Cell的类型分为了字符串、数字、公式以及布尔四种类型：
+
+- 其中，字符串通过getRechStringCellValue().toString()来获取即可；
+- 而数字和公式在Excel中实际储存的都是Double类型；
+- 布尔类型直接通过getBooleanCellValue()获取。
+- 比较特殊是日期类型，日期类型实际cellType是数字，但是直接读取数字则不是想要的格式。为此，POI提供了一个方法（org.apache.poi.ss.usermodel.DateUtil.isCellDateFormatted（cell））来判断是否为日期，如果为日期格式则使用cell的getDateCellValue方法获取就可以得到Excel里格式化后的日期内容。
+
+　　
+
+#### 工具使用代码示例
+
+（我这里的业务要求是只取部分需要的列里的值，而非全部列里的值导入。）
+
+```java
+package pb.utils;
+
+import org.apache.poi.ss.usermodel.*;
+
+import java.io.File;
+import java.util.*;
+
+/**
+ * Excel导入读取
+ */
+public class ExcelUtils
+{
+    /**
+     * 动态解析Excel文件，并返回指定的对象列表
+     *
+     * @param excelFile
+     * @param patternKey 匹配使用的主键名
+     * @param pattern    全部匹配值
+     * @param columnMap  需要获取的标题与字段名的对应，如显示名称->name；包含主键列
+     * @return
+     */
+    public static Map<String,LinkedHashMap<String,Object>> resolveExcel(File excelFile,String patternKey,Set<String> pattern,Map<String,String> columnMap) throws Exception
+    {
+        //记录结果
+        Map<String,LinkedHashMap<String,Object>> result=new HashMap<>();
+        //载入文件
+        Workbook workbook=WorkbookFactory.create(excelFile);
+
+        //记录当前标题与列位置的映射
+        Map<String,String> titleMap=new LinkedHashMap<>();
+
+        //遍历所有Sheet页
+        int pageNum=workbook.getNumberOfSheets();
+        for(int page=0;page<pageNum;page++)
+        {
+            //获取Sheet
+            Sheet sheet=workbook.getSheetAt(page);
+
+            //遍历全部非空行
+            Iterator<Row> rowItr=sheet.rowIterator();
+            int rowNum=0;
+            while(rowItr.hasNext())
+            {
+                //获取行
+                Row row=rowItr.next();
+                //记录数据
+                LinkedHashMap<String,Object> map=new LinkedHashMap<>();
+
+                //遍历本行全部列（包括空列）
+                int colNum=row.getLastCellNum();
+                for(int index=0;index<colNum;index++)
+                {
+                    //获取单元格
+                    Cell cell=row.getCell(index);
+                    //获取单元格内容
+                    Object value=getCellValue(cell);
+
+                    //第一行为标题行，记录标题和位置索引的映射
+                    if(rowNum==0)
+                    {
+                        String title=value+"";
+                        if(columnMap.containsKey(title))
+                            titleMap.put(index+"",title);
+                    }
+                    //非标题行，根据指定columnMap和PatternKey查找记录
+                    else
+                    {
+                        //需要的内容
+                        if(!titleMap.containsKey(index+"")) continue;
+                        map.put(columnMap.get(titleMap.get(index+"")),value);
+                    }
+                }
+
+                //验证是否记录此行
+                if(pattern.contains(map.get(patternKey)+""))
+                {
+                    result.put(map.get(patternKey)+"",map);
+                }
+
+                rowNum++;
+            }
+        }
+
+        return result;
+    }
+
+    /**
+     * 依据Excel中Cell类型读取不同的值
+     *
+     * @param cell
+     * @return String/Double/Date/boolean/null
+     */
+    public static Object getCellValue(Cell cell)
+    {
+        Object result=null;
+
+        //获取类型
+        int type=cell.getCellType();
+        //根据不同类型处理
+        switch(type)
+        {
+            //字符串
+            case Cell.CELL_TYPE_STRING:
+            {
+                result=cell.getRichStringCellValue().toString().trim();
+                break;
+            }
+            //数字(Double)
+            case Cell.CELL_TYPE_NUMERIC:
+            //公式(Double)
+            case Cell.CELL_TYPE_FORMULA:
+            {
+                //日期类型判断
+                //日期类型
+                if(org.apache.poi.ss.usermodel.DateUtil.isCellDateFormatted(cell))
+                {
+                    result=cell.getDateCellValue();
+                }
+                //普通数字
+                else
+                {
+                    result=new Double(cell.getNumericCellValue());
+                }
+                break;
+            }
+            //布尔
+            case Cell.CELL_TYPE_BOOLEAN:
+            {
+                result=cell.getBooleanCellValue();
+                break;
+            }
+            //其他
+            default:
+        }
+
+        return result;
+    }
+}
+```
+
