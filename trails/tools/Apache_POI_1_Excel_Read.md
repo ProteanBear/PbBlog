@@ -1,9 +1,30 @@
 # Apache POI 之一：Excel文档的读取
 **Apache POI** 是创建和维护操作各种符合Office Open XML（OOXML）标准和微软的OLE 2复合文档格式（OLE2）的Java API。用它可以使用Java读取和创建,修改MS Excel文件.而且,还可以使用Java读取和创建MS Word和MSPowerPoint文件。Apache POI 提供Java操作Excel解决方案（适用于Excel97-2008）。
 
-**本篇文章主要是演示Excel文档的读取处理**。
 
-　　
+
+#### 前言：依赖或下载
+
+```xml
+<!-- poi 依赖 -->
+<dependency>
+   <groupId>org.apache.poi</groupId>
+   <artifactId>poi</artifactId>
+   <version>3.16</version>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>3.16</version>
+</dependency>
+```
+
+或者在[poi.apache.org](https://poi.apache.org/download.html)下载jar包
+
+
+
+**本篇文章主要是演示Excel文档的读取处理**。
 
 使用POI解析Excel有两个需要注意的关键点：
 
@@ -61,7 +82,7 @@ POI解析Cell的类型分为了字符串、数字、公式以及布尔四种类�
 - 布尔类型直接通过getBooleanCellValue()获取。
 - 比较特殊是日期类型，日期类型实际cellType是数字，但是直接读取数字则不是想要的格式。为此，POI提供了一个方法（org.apache.poi.ss.usermodel.DateUtil.isCellDateFormatted（cell））来判断是否为日期，如果为日期格式则使用cell的getDateCellValue方法获取就可以得到Excel里格式化后的日期内容。
 
-　　
+
 
 #### 工具使用代码示例
 
