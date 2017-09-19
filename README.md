@@ -14,7 +14,7 @@ The ProteanBear's blog for  IT technology.
 
 ##### IT译文
 
-1. [IT译文：深入理解iOS11中的WebView](translate/translate_iOS11_webview.md)
+1. [IT译文：理解iOS11中的WebView](translate/translate_iOS11_webview.md)
 
 ##### 杂学札记之大数据系列
 
