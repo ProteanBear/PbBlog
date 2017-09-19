@@ -12,6 +12,10 @@ The ProteanBear's blog for  IT technology.
 
 1. [Apache POI 之一：Excel文档的读取](trails/tools/Apache_POI_1_Excel_Read.md)
 
+##### IT译文
+
+1. [IT译文：深入理解iOS11中的WebView](translate/translate_iOS11_webview.md)
+
 ##### 杂学札记之大数据系列
 
 1. [CentOS7和Windows10双系统安装](trails/bigdata/1_centos_install.md)
