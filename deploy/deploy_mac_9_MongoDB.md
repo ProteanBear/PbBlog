@@ -20,10 +20,10 @@ MongoDB是一个基于分布式文件存储的数据库。由C++语言编写。�
 增加如下配置内容：
 
 	#/usr/local/mongodb/mongod.conf
-		# 自定义数据库文件存储位置	
-		dbpath = /usr/local/mongodb_data		
-		# 只接受本地连接 	
-		bind_ip = 127.0.0.1
+	# 自定义数据库文件存储位置	
+	dbpath = /usr/local/mongodb_data		
+	# 只接受本地连接 	
+	bind_ip = 127.0.0.1
 
 #### 启动
 	cd /usr/local/mongodb/bin	./mongod
