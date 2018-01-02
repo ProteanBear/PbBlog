@@ -20,14 +20,22 @@ MongoDB是一个基于分布式文件存储的数据库。由C++语言编写。�
 增加如下配置内容：
 
 	#/usr/local/mongodb/mongod.conf
-		# 自定义数据库文件存储位置	dbpath = /usr/local/mongodb_data		# 只接受本地连接 	bind_ip = 127.0.0.1
+	# 自定义数据库文件存储位置	
+	dbpath = /usr/local/mongodb_data		
+	# 只接受本地连接 	
+	bind_ip = 127.0.0.1
 
 #### 启动
 	cd /usr/local/mongodb/bin	./mongod
 #### 设置开机自启动
+
 首先创建一个plist文件，创建lauch job，用来mongodb开机启动，关机停止，也设置一些日志输出：
+
 	sudo vi /Library/LaunchDaemons/org.mongodb.mongod.plist
-增加配置内容：	<plist version="1.0">
+	
+增加配置内容：	
+
+	<plist version="1.0">
 		<dict>
 			<key>Label</key>
 			<string>org.mongodb.mongod</string>
@@ -61,7 +69,7 @@ MongoDB是一个基于分布式文件存储的数据库。由C++语言编写。�
 	</plist>
 
 plist 文件创建好后 执行如下命令加载到 开机启动中：
-​	
+
 	sudo launchctl load /Library/LaunchDaemons/org.mongodb.mongod.plist 
 
 命令执行后 mongodb 将会马上启动，下次也会随开机而启动。
