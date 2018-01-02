@@ -56,7 +56,7 @@ The ProteanBear's blog for  IT technology.
 	</tr>
 	<tr>
 		<th style="background-color:#EEE;">工作时间</th>
-		<td colspan=2>8年以上</td>
+		<td colspan=2>9年以上</td>
 		<th colspan=2 style="background-color:#EEE;">联系电话</th>
 		<td>—</td>
 	</tr>
