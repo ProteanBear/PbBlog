@@ -110,7 +110,9 @@ public class ExcelUtils
      * @param columnMap  需要获取的标题与字段名的对应，如显示名称->name；包含主键列
      * @return
      */
-    public static Map<String,LinkedHashMap<String,Object>> resolveExcel(File excelFile,String patternKey,Set<String> pattern,Map<String,String> columnMap) throws Exception
+    public static Map<String,LinkedHashMap<String,Object>> resolveExcel
+               (File excelFile,String patternKey,Set<String> pattern,Map<String,String> columnMap) 
+               throws Exception
     {
         //记录结果
         Map<String,LinkedHashMap<String,Object>> result=new HashMap<>();
