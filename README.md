@@ -15,6 +15,7 @@ The ProteanBear's blog for  IT technology.
 ##### IT译文
 
 1. [IT译文：理解iOS11中的WebView](translate/translate_iOS11_webview.md)
+2. [IT译文：重要的图像优化](https://github.com/ProteanBear/essential-image-optimization/blob/master/app/partials/book.md)
 
 ##### 杂学札记之大数据系列
 
@@ -24,9 +25,11 @@ The ProteanBear's blog for  IT technology.
 4. [使用Docker搭建Hadoop集群](trails/bigdata/4_hadoop_docker.md)
 
 ##### 小技巧系列：
-1. [小技巧：iOS，设置Grouped风格的UITableView的顶部位置](tips/tips_iOS_1_设置Grouped风格的UITableView的顶部位置.md)
-2. [小技巧：iOS，如何控制App内屏幕常亮](tips/tips_iOS_2_如何控制App内屏幕常亮.md)
-3. [小技巧：Hibernate中Oracle数据库中Date类型的注解](tips/tips_iOS_3_Hibernate中Oracle数据库中Date类型的注解.md)
+1. [小技巧：iOS，设置Grouped风格的UITableView的顶部位置](tips/tips_1_设置Grouped风格的UITableView的顶部位置.md)
+2. [小技巧：iOS，如何控制App内屏幕常亮](tips/tips_2_如何控制App内屏幕常亮.md)
+3. [小技巧：Hibernate中Oracle数据库中Date类型的注解](tips/tips_3_Hibernate中Oracle数据库中Date类型的注解.md)
+4. [小技巧：Redis，批量删除Key](tips/tips_4_Redis批量删除Key.md)
+5. [小技巧：SQL，insert加入Where条件](tips/tips_5_SQL_insert加入Where条件.md)
 
 #####  Mac环境部署系列
 1. [Mac环境部署之Apache](deploy/deploy_mac_1_apache.md)
