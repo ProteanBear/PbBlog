@@ -8,6 +8,10 @@ The ProteanBear's blog for  IT technology.
        详情请见 [《个人简历》](#三个人简历)
 #### 二、文章目录：
 
+##### 工作随笔
+
+1. [让我来限制你的input输入](essay/20180102_让我来限制你的input输入.md)
+
 ##### 杂学札记之那些工具们
 
 1. [Apache POI 之一：Excel文档的读取](trails/tools/Apache_POI_1_Excel_Read.md)
