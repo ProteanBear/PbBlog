@@ -16,7 +16,7 @@ The ProteanBear's blog for  IT technology.
 ##### 杂学札记之那些工具们
 
 1. [Apache POI 之一：Excel文档的读取](trails/tools/Apache_POI_1_Excel_Read.md)
-2. [Quartz之一：任务调度的动态处理](tails/tools/Quartz_Libra.md)
+2. [Quartz之一：任务调度的动态处理](trails/tools/Quartz_Libra.md)
 
 ##### IT译文
 
