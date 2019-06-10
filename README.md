@@ -8,48 +8,31 @@ The ProteanBear's blog for  IT technology.
        详情请见 [《个人简历》](#三个人简历)
 #### 二、文章目录：
 
-##### 工作随笔
+##### 杂学札记(notes)
 
-1. [让我来限制你的input输入](essay/20180102_让我来限制你的input输入.md)
-2. [要求时限限制在7日](essay/20180306_限制在7个工作日.md)
+1. [（20170306）大数据系列之1：CentOS7和Windows10双系统安装](notes/20170306_大数据系列之1：双系统安装.md)
+2. [（20170306）大数据系列之2：CentOS7下Docker安装和配置](notes/20170306_大数据系列之2：Docker安装与配置.md)
+3. [（20170306）大数据系列之3：使用Docker编译64位的Hadoop](notes/20170306_大数据系列之3：编译Hadoop.md)
+4. [（20170306）大数据系列之4：使用Docker搭建Hadoop集群](notes/20170306_大数据系列之4：Docker搭建Hadoop集群.md)
+5. [（20170906）Apache POI 之1：Excel文档的读取](notes/20170906_POI之1：Excel文档的读取.md)
+6. [（20180102）随笔：让我来限制你的input输入](notes/20180102_让我来限制你的input输入.md)
+7. [（20180306）随笔：要求时限限制在7日](notes/20180306_限制在7个工作日.md)
 
-##### 杂学札记之那些工具们
+##### 日积月累(tips)：
+1. [（20160315）设置Grouped风格的UITableView的顶部位置](tips/20160315_设置Grouped风格的UITableView的顶部位置.md)
+2. [（20160804）如何控制App内屏幕常亮](tips/20160804_如何控制App内屏幕常亮.md)
+3. [（20170902）Hibernate中Oracle数据库中Date类型的注解](tips/20170902_Hibernate中Oracle数据库中Date类型的注解.md)
+4. [（20170919）理解iOS11中的WebView【译】](tips/20170919_iOS11webview.md)
+5. [（20180102）Redis批量删除Key](tips/20180102_Redis批量删除Key.md)
+6. [（20180102）SQL，insert加入Where条件](tips/20180102_SQL_insert加入Where条件.md)
 
-1. [Apache POI 之一：Excel文档的读取](trails/tools/Apache_POI_1_Excel_Read.md)
-2. [Quartz之一：任务调度的动态处理](trails/tools/Quartz_Libra.md)
+##### 追趋逐耆(trend)：
 
-##### IT译文
+##### 溯本求源(origin)：
 
-1. [IT译文：理解iOS11中的WebView](translate/translate_iOS11_webview.md)
-2. [IT译文：重要的图像优化](https://github.com/ProteanBear/essential-image-optimization/blob/master/app/partials/book.md)
+##### 匠心独运(source)：
 
-##### 杂学札记之大数据系列
-
-1. [CentOS7和Windows10双系统安装](trails/bigdata/1_centos_install.md)
-2. [CentOS下Docker的安装和配置](trails/bigdata/2_docker_install.md)
-3. [使用Docker编译64位的Hadoop](trails/bigdata/3_hadoop_compile.md)
-4. [使用Docker搭建Hadoop集群](trails/bigdata/4_hadoop_docker.md)
-
-##### 小技巧系列：
-1. [小技巧：iOS，设置Grouped风格的UITableView的顶部位置](tips/tips_1_设置Grouped风格的UITableView的顶部位置.md)
-2. [小技巧：iOS，如何控制App内屏幕常亮](tips/tips_2_如何控制App内屏幕常亮.md)
-3. [小技巧：Hibernate中Oracle数据库中Date类型的注解](tips/tips_3_Hibernate中Oracle数据库中Date类型的注解.md)
-4. [小技巧：Redis，批量删除Key](tips/tips_4_Redis批量删除Key.md)
-5. [小技巧：SQL，insert加入Where条件](tips/tips_5_SQL_insert加入Where条件.md)
-
-#####  Mac环境部署系列
-1. [Mac环境部署之Apache](deploy/deploy_mac_1_apache.md)
-2. [Mac环境部署之php](deploy/deploy_mac_2_php.md)
-3. [Mac环境部署之MySQL](deploy/deploy_mac_3_MySQL.md)
-4. [Mac环境部署之phpMyAdmin](deploy/deploy_mac_4_phpmyadmin.md)
-5. [Mac环境部署之Java](deploy/deploy_mac_5_Java.md)
-6. [Mac环境部署之iOS](deploy/deploy_mac_6_iOS.md)
-7. [Mac环境部署之homebrew](deploy/deploy_mac_7_homebrew.md)
-8. [Mac环境部署之Nginx](deploy/deploy_mac_8_Nginx.md)
-9. [Mac环境部署之MongoDB](deploy/deploy_mac_9_MongoDB.md)
-10. [Mac环境部署之Node.js](deploy/deploy_mac_10_Node.js.md)
-11. [Mac环境部署之Ruby on Rails](deploy/deploy_mac_11_Rails.md)
-12. [Mac环境部署之Redis](deploy/deploy_mac_12_Redis.md)
+1. [（20180313）Libra：基于Quartz的动态任务调度](source/20180313_Libra：基于Quartz的动态任务调度.md)
 
 <span id="resume" />
 
